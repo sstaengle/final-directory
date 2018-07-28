@@ -1,0 +1,18 @@
+table {
+  width: 100%;
+}
+table, th, td {
+    border: 1px solid black;
+}
+
+thead {
+  background: gray;
+}
+
+tbody {
+  background: lightgray;
+}
+
+td {
+  text-align: center;
+}

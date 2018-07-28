@@ -1,0 +1,30 @@
+body {
+  background: yellow;
+  font-family: 'Overpass', sans-serif;
+}
+nav > ul {
+  lists-style: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+nav > ul > li:first-child {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+nav > ul > li > a{
+  color: darkgray;
+  text-decoration: none;
+  transition:all .5s ease-in-out;
+}
+nav > ul > li > a:hover{
+  color: red;
+  font-size: 30px;
+  text-decoration: line-through;
+}
