@@ -73,7 +73,9 @@ div{
     cursor: pointer;
     background-color: rgba(33, 33, 33, 0.75);
   }
-
+.active{
+  color: yellow;
+}
 img{
   background: url('../images/about/crostage.jpg') no-repeat center center;
   -webkit-background-size: cover;
