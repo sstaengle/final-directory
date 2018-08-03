@@ -12,9 +12,9 @@
   <title>Welcome to CRO</title>
 <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
 <!-- FLEXBOX -->
-<link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">
+<!--<link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css">-->
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
 <!-- GOOGLE FONTS -->
@@ -22,17 +22,32 @@
 </head>
 <!--BODY -->
 <body>
-    <nav class="navbar navbar-dark" "fixed-top" style="background-color: #000000;">
-    <!-- Navbar content -->
-      <a href="index.html"><img class="logo" src="./assets/images/CROnavbutton.jpg" alt="CRO mask logo" /></a>
-        <div id="MenuIcon" class="mobile-menu-icon">
+<!-- this is the HEADER -->
+  <!-- this might be responsive design here-->
+  <!-- <div id="MenuIcon" class="mobile-menu-icon">
+    </div> -->
+  <div class="header">
+    <div class="container">
+     <div class="row">
+      <div class="col-4">
+        <a href="index.html"><img id="logo" src="./assets/images/CROnavbutton.jpg" alt="CRO mask logo" /></a>
       </div>
-    <a class="active" href="about.html">ABOUT</a>
-    <a href="discography.html">DISCOGRAPHY</a>
-    <a href="media.html">MEDIA</a>
-    <a href="merch.html">MERCH</a>
-    <a href="tour.html">TOUR</a>
-    </nav>
+        <div class="col">
+          <div class="row">
+            <div class="col"><a href="about.html">ABOUT</a></div>
+            <div class="col"><a href="discography.html">DISCOGRAPHY</a></div>
+            <div class="col"><a href="media.html">MEDIA</a></div>
+            <div class="col"><a href="merch.html">MERCH</a></div>
+            <div class="col"><a href="tour.html">TOUR</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- not recommended ... <nav class="navbar navbar-dark" "fixed-top" style="background-color: #000000;"> -->
+
  <section>
   <img src="./assets/images/CROstage.jpg" alt="CRO on stage" />
     <br />
@@ -108,20 +123,19 @@
   </div>
 </section>
 </div>
-<section>
-  <div class="container">
-  <div class="row">
-  <div class="col-xs-12">
+
+<!-- FOOTER -->
     <div class="footer">
-      <footer>
-       <h1>FOLLOW CRO</h1>
-          FACEBOOK
-          INSTA
-          TWITTER
-          YouTube
-          SPOTIFY
-      </footer>
-    </div>
-    </section>
+      <div class="container">
+       <div class="row-icons">
+        <h1>FOLLOW CRO</h1>
+        <div class="row">
+         ICONS
+        </div>
+       </div>
+      </div>
+     </div>
+
+
 </body>
 </html>

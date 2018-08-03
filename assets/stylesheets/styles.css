@@ -1,38 +1,37 @@
 @charset "UTF-8";
 
-html, body{
+body {
   background: white;
   font-family: 'Overpass', sans-serif;
   width: 100%;
-  height: 100%;
+  /*height: 100%
   margin: 0;
-  padding: 0;
+  padding: 0;*/
 }
-div{
-  width:auto
-  height:auto
-  font-size: 24px;
-  margin-top:20px;
 
-.box {
+/*.box {
     display: flex;
     justify-content: flex-start;
- }
+ }*/
+
 
  .header {
-   width: 100%;
-   height: 45px;
+   height: 50px;
+   text-align: left;
    padding: 0 10px;
-   position: absolute;
-   top: 0;
+   /*top: 0; */
    left: 0;
    right: 0;
-   background-color: rgba(33, 33, 33, 0.5);
-   -webkit-box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.75);
-   -moz-box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.75);
-   box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
-   z-index: 10;
+   background-color: black;
  }
+
+ #logo {
+   height: 45px;
+ }
+
+.row-icons{
+
+}
 
  .container{
    position: relative;
@@ -73,9 +72,7 @@ div{
     cursor: pointer;
     background-color: rgba(33, 33, 33, 0.75);
   }
-.active{
-  color: yellow;
-}
+
 img{
   background: url('../images/about/crostage.jpg') no-repeat center center;
   -webkit-background-size: cover;
@@ -116,21 +113,7 @@ display: block;
 background-color: black;
 }
 
-.logo{
-  width: small;
-  height: auto;
-}
 
-.active{
-  font-family: Overpass;
-  font-size: 24px;
-  color: orange;
-  width: 100%;
-  height: auto;
-  display: none;
-  position: relative;
-  z-index: 10;
-  background-color: black;
 
 }
 #MenuIcon{
