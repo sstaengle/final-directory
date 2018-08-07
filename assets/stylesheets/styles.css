@@ -71,7 +71,7 @@ margin-right: auto
 
 .fa{
   color:black;
-  font-size: 60px;
+  font-size: 50px;
   padding: 20px;
 }
 
@@ -81,6 +81,7 @@ h1 {
   margin-bottom: 12px;
   margin-left: auto;
   margin-right: auto;
+  color: black;
 }
 h2{
   margin-top: 12px;
@@ -97,4 +98,15 @@ h2{
 /* video position - needs to go under header but abover footer */
 video{
   position: relative;
+}
+
+.legal{
+  font-size:12px;
+  padding: 25px;
+  color:black;
+}
+
+.album-thumbnail{
+  height: 250px;
+  width:auto;
 }
