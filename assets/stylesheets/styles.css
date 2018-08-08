@@ -4,19 +4,37 @@ body {
   background: white;
   font-family: 'Overpass', sans-serif;
   width: 100%;
-  /*height: 100%
-  margin: 0;
-  padding: 0;*/
 }
 
- .header {
-   height: 70px;
-   padding-top: 25px;
-   left: 0;
-   right: 0;
+ .header-container {
+   height: 100px;
+   width: 100%;
    background-color: black;
-   text-align: left;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 80px;
  }
+
+ .icon-container{
+   display: inline-block;
+ }
+
+ .nav-container{
+   display: inline-block;
+ }
+
+ .nav-item{
+   display:inline-block;
+   padding-left: 80px;
+ }
+
+ .nav-item a {
+   color: white;
+ }
+.nav-item.active a {
+  color: #E87DF8;
+}
 
  #logo {
    padding-top: 0px;
@@ -24,20 +42,16 @@ body {
    width: auto;
  }
 
- /* unvisited link */
- a:link {
-     color: red;
- }
-
- /* mouse over link */
+ /*
+  mouse over link
  a:hover {
      color: #5BBABC;
  }
 
- /* selected link */
+selected link
  a:active {
      color: hotpink;
- }
+ } */
  /* how to chance the active page to pink color? */
 /* how to make footer links PINK on hover? curently turn turquoise and disappear in footer */
 /* how to center footer content? */
@@ -60,19 +74,15 @@ margin-left: auto;
 margin-right: auto
 }
 
-#video {
-  position:absolute;
-  z-index:-1;
-  top:0;
-  left:0;
-  width:100%;
-  height:100vh;
-}
-
 .fa{
   color:black;
   font-size: 50px;
   padding: 20px;
+}
+
+.fa:hover{
+  color: #E87DF8;
+  text-decoration: none;
 }
 
 h1 {
@@ -82,6 +92,9 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
 }
 h2{
   margin-top: 12px;
@@ -95,18 +108,107 @@ h2{
   padding-bottom: 12px;
 }
 
-/* video position - needs to go under header but abover footer */
-video{
-  position: relative;
+
+.video-container{
+  width:100%;
+  height: auto;
+  background: #5BBABC;
+}
+
+.image-overlay{
+  position: absolute;
+  top: 200px;
 }
 
 .legal{
   font-size:12px;
-  padding: 25px;
+  padding: 15px;
   color:black;
+  display: inline-block;
 }
 
 .album-thumbnail{
   height: 250px;
   width:auto;
+}
+
+.album-container{
+  border-top: 2px solid lightgrey;
+  padding-top: 40px;
+}
+
+.song-number{
+  width: 60px;
+}
+
+
+.header-border{
+  border-bottom: 2px solid lightgrey;
+}
+
+.video-name{
+  text-align: center;
+}
+
+.video-iframe{
+  margin: 0 auto;
+  display: block;
+}
+
+.music-video-container{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+}
+
+.about-banner{
+  display:block;
+  width:80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+.tour-banner{
+  display:block;
+  width:80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 25px;
+}
+
+.tour-container{
+  padding-bottom: 20px;
+  border-bottom: 2px solid lightgrey;
+}
+/*
+.col-md-3{
+  padding-top: 50px;
+  border-top: 2px solid lightgrey;
+}
+
+.col-md-9{
+  padding-top: 50px;
+  border-top: 2px solid lightgrey;
+}
+*/
+
+.melodie-border{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 2px solid lightgrey;
+}
+
+.tru-border{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 2px solid lightgrey;
+
+.table-link a {
+  color: #5BBABC;
 }

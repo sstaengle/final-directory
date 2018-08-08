@@ -25,12 +25,26 @@
 <body>
   <!-- this is the HEADER -->
     <div class="header">
+      <div class="header-container">
+        <div class="icon-container">
+          <a href="index.html"><img id="logo" src="./assets/images/CROnavbutton.jpg" alt="CRO mask logo" /></a>
+        </div>
+        <div class="nav-container">
+          <div class="nav-item"><a href="about.html">ABOUT</a></div>
+          <div class="nav-item"><a href="discography.html">DISCOGRAPHY</a></div>
+          <div class="nav-item"><a href="media.html">MEDIA</a></div>
+          <div class="nav-item"><a href="merch.html">MERCH</a></div>
+          <div class="nav-item"><a href="tour.html">TOUR</a></div>
+        </div>
+      </div>
+      <!--
       <div class="container">
        <div class="row">
           <div class="col-3">
           <a href="index.html"><img id="logo" src="./assets/images/CROnavbutton.jpg" alt="CRO mask logo" /></a>
           </div>
-          <!-- <div class="col"> -->
+
+           <div class="col">
             <div class="col-md-6 offset-md-3">
               <div class="row global-nav-text">
                 <div class="col active"><a href="about.html">ABOUT</a></div>
@@ -42,9 +56,12 @@
             </div>
         </div>
       </div>
-    </div>
+    </div> -->
 <!-- this is the VIDEO -->
-  <div>
+  <div class="video-container">
+    <div class="image-overlay">
+      <img src="./assets/images/CRO-flying.png" />
+    </div>
     <video autoplay muted loop id="video">
     <source src="./assets/images/HOME-VIDEO/Clouds_Lapse.mp4" type="video/mp4">
     </video>
@@ -53,20 +70,19 @@
 
 <!-- FOOTER -->
 <div class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
       <h1>FOLLOW CRO</h1>
         <a href="https://www.facebook.com/cromusic/" target="_blank"<i class="fa fa-facebook"></i></a>
         <a href="https://www.instagram.com/thisiscro/" target="_blank"<i class="fa fa-instagram"></i></a>
         <a href="https://twitter.com/thisiscro" target="_blank"<i class="fa fa-twitter"></i></a>
         <a href="https://www.youtube.com/user/ChimperatorTV/featured" target="_blank"<i class="fa fa-youtube"></i></a>
         <a href="https://open.spotify.com/artist/3utZ2yeQk0Z3BCOBWP7Vlu" target="_blank"<i class="fa fa-spotify"></i></a>
-        <p class="legal">2018 COPYRIGHT  |  PRIVACY POLICY  |  TERMS OF USE</p>
+      <div>
+        <div class="legal">2018 COPYRIGHT</div>
+        <div class="legal">PRIVACY POLICY</div>
+        <div class="legal">TERMS OF USE</div>
       </div>
-    </div>
-  </div>
 </div>
+
 
 </body>
 </html>
