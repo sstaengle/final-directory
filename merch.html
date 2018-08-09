@@ -10,6 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- title of page in browser -->
   <title>Welcome to CRO</title>
+<!-- JAVA script -->
+<script type="text/javascript" src=".assets/javascripts/merch.js"></script>
 <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -35,9 +37,84 @@
         </div>
       </div>
     </div>
-    <h1>MERCH</h1>
+    <div class="container">
+      <img class="merch-banner" src="./assets/images/street-fighter.jpg" alt="CRO with mask on" />
+      <div class="container">
+        <div class="col-xs-12">
+          <h1 class="header-border">MERCH</h1>
+        </div>
+        <br />
+      </div>
+    </div>
 
+<!-- MERCH container
+<div class="container merch-container">
+  <div class="row">
+    <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/MERCH-items/1-mer.jpg" alt="picture 1" /></div>
+    <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/MERCH-items/2-mer.jpg" alt="picture 2" /></div>
+    <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/MERCH-items/3-mer.jpg" alt="picture 3" /></div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/MERCH-items/4-mer.jpg" alt="picture 4" /></div>
+    <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/MERCH-items/5-mer.jpg" alt="picture 5" /></div>
+    <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/MERCH-items/6-mer.jpg" alt="picture 6" /></div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/MERCH-items/7-mer.jpg" alt="picture 7" /></div>
+    <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/MERCH-items/8-mer.jpg" alt="picture 8" /></div>
+    <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/MERCH-items/9-mer.jpg" alt="picture 9" /></div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/MERCH-items/10-mer.jpg" alt="picture 10" /></div>
+    <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/MERCH-items/11-mer.jpg" alt="picture 11" /></div>
+    <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/MERCH-items/12-mer.jpg" alt="picture 12" /></div>
+  </div>
+</div>
+<br />
 
+-->
+
+<!-- 2-MERCH container -->
+<div class="container merch-container">
+  <div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('ALL')"> ALL</button>
+  <button class="btn" onclick="filterSelection('TOPS')"> TOPS</button>
+  <button class="btn" onclick="filterSelection('HATS')"> HATS</button>
+  <button class="btn" onclick="filterSelection('BUNDLES')"> BUNDLES</button>
+  <button class="btn" onclick="filterSelection('ACCESSORIES')"> ACCESSORIES</button>
+</div>
+<br />
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/1-mer.jpg" alt="TOPS" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/2-mer.jpg" alt="TOPS" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/3-mer.jpg" alt="TOPS" style="width:100%"></div>
+</div>
+<br />
+<div class="row">
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/4-mer.jpg" alt="TOPS" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/5-mer.jpg" alt="HATS" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/6-mer.jpg" alt="HATS" style="width:100%"></div>
+</div>
+<br />
+<div class="row">
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/7-mer.jpg" alt="HATS" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/8-mer.jpg" alt="BUNDLES" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/9-mer.jpg" alt="BUNDLES" style="width:100%"></div>
+</div>
+<br />
+<div class="row">
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/10-mer.jpg" alt="BUNDLES" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/11-mer.jpg" alt="ACCESSORIES" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/12-mer.jpg" alt="ACCESSORIES" style="width:100%"></div>
+</div>
+</div>
+<br />
+<br />
+<!-- END GRID -->
 
 
     <!-- FOOTER -->

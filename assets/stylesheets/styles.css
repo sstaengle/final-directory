@@ -173,6 +173,7 @@ h2{
   padding-bottom: 10px;
 }
 
+/* TOUR */
 .tour-banner{
   display:block;
   width:80%;
@@ -182,21 +183,12 @@ h2{
   padding-bottom: 25px;
 }
 
+/* GREY BORDERS */
 .tour-container{
   padding-bottom: 20px;
   border-bottom: 2px solid lightgrey;
 }
-/*
-.col-md-3{
-  padding-top: 50px;
-  border-top: 2px solid lightgrey;
-}
 
-.col-md-9{
-  padding-top: 50px;
-  border-top: 2px solid lightgrey;
-}
-*/
 
 .melodie-border{
   padding-top: 50px;
@@ -211,4 +203,101 @@ h2{
 
 .table-link a {
   color: #5BBABC;
+}
+
+/* MEDIA */
+.media-row{
+  padding-bottom: 10px;
+}
+
+/* MERCH */
+
+.merch-banner{
+  display:block;
+  width:80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 25px;
+}
+
+/* --------------- responsive filter on MERCH ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Overpass;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: lightgrey;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #D6DED1;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #5BBABC;
+   color: black;
+}
+
+#myBtnContainer{
+  background-color: #e7e7e7; color: black;
 }
