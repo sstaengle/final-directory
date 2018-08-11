@@ -17,6 +17,10 @@
   <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
 <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+<!-- LIGHTBOX links -->
+<link rel="stylesheet" href="./assets/stylesheets/lightbox.min.css" />
+<!-- <link rel="stylesheet" href="./assets/stylesheets/lightbox.css" /> -->
+
 </head>
 <!--BODY -->
 <body>
@@ -40,28 +44,61 @@
     <br />
     <div class="photo-album-container">
       <div class="row">
-        <div class="col-xs-6 col-md-4 pink-box"><img class="tile" src="./assets/images/Media-images/1-img.png" alt="picture 1" /></div>
-        <div class="col-xs-6 col-md-4 pink-box"><img class="tile" src="./assets/images/Media-images/2-img.png" alt="picture 2" /></div>
-        <div class="col-xs-6 col-md-4 pink-box"><img class="tile" src="./assets/images/Media-images/3-img.png" alt="picture 3" /></div>
-      </div>
+        <div class="col-xs-6 col-md-4">
+          <a href="./assets/images/Media-images/1-img.png" data-lightbox="concertpics" data-title="CRO on Stage in Hannover">
+            <img class="img-responsive lightbox-image" src="./assets/images/Media-images/1-img.png" />
+          </a>
+        </div>
+          <div class="col-xs-6 col-md-4">
+            <a href="./assets/images/Media-images/2-img.png" data-lightbox="concertpics" data-title="CRO on Stage in Frankfurt">
+              <img class="img-responsive lightbox-image" src="./assets/images/Media-images/2-img.png" />
+            </a>
+          </div>
+            <div class="col-xs-6 col-md-4">
+              <a href="./assets/images/Media-images/3-img.png" data-lightbox="concertpics" data-title="CRO performing in Munich">
+              <img class="img-responsive lightbox-image" src="./assets/images/Media-images/3-img.png" />
+            </a>
+            </div>
+        </div>
       <br />
       <div class="row">
-        <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/Media-images/4-img.png" alt="picture 4" /></div>
-        <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/Media-images/5-img.png" alt="picture 5" /></div>
-        <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/Media-images/6-img.png" alt="picture 6" /></div>
-      </div>
-      <br />
-      <div class="row">
-        <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/Media-images/7-img.png" alt="picture 7" /></div>
-        <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/Media-images/8-img.png" alt="picture 8" /></div>
-        <div class="col-xs-6 col-md-4"><img class="tile" src="./assets/images/Media-images/9-img.png" alt="picture 9" /></div>
-      </div>
-  </div>
-</div>
-
+        <div class="col-xs-6 col-md-4">
+          <a href="./assets/images/Media-images/4-img.png" data-lightbox="concertpics" data-title="CRO VIOVIO">
+            <img class="img-responsive lightbox-image" src="./assets/images/Media-images/4-img.png" />
+          </a>
+        </div>
+          <div class="col-xs-6 col-md-4">
+            <a href="./assets/images/Media-images/5-img.png" data-lightbox="concertpics" data-title="CRO Street Fighter">
+              <img class="img-responsive lightbox-image" src="./assets/images/Media-images/5-img.png" />
+            </a>
+          </div>
+            <div class="col-xs-6 col-md-4">
+              <a href="./assets/images/Media-images/6-img.png" data-lightbox="concertpics" data-title="CRO in the Studio">
+              <img class="img-responsive lightbox-image" src="./assets/images/Media-images/6-img.png" />
+            </a>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-xs-6 col-md-4">
+            <a href="./assets/images/Media-images/7-img.png" data-lightbox="concertpics" data-title="CRO Confetti">
+              <img class="img-responsive lightbox-image" src="./assets/images/Media-images/7-img.png" />
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <a href="./assets/images/Media-images/8-img.png" data-lightbox="concertpics" data-title="CRO Hands Holding Mask">
+              <img class="img-responsive lightbox-image" src="./assets/images/Media-images/8-img.png" />
+            </a>
+          </div>
+            <div class="col-xs-6 col-md-4">
+              <a href="./assets/images/Media-images/9-img.png" data-lightbox="concertpics" data-title="CRO at Hamburg Live Festival">
+              <img class="img-responsive lightbox-image" src="./assets/images/Media-images/9-img.png" />
+              </a>
+            </div>
+          </div>
+        </div>
     </div>
     <br />
-  </div>
     <div class="container">
       <h1 class="header-border">VIDEOS</h1>
       <div class="music-video-container">
@@ -94,5 +131,21 @@
         <div class="legal">TERMS OF USE</div>
       </div>
 </div>
+
+<!-- LOAD JQUERY -->
+ <script
+   src="https://code.jquery.com/jquery-3.3.1.min.js"
+   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+   crossorigin="anonymous"></script>
+ <!-- LOAD LIGHTBOX -->
+ <script src="./assets/javascripts/lightbox.js"></script>
+
+ <!-- LIGHTBOX OPTIONS -->
+ <script>
+   lightbox.option({
+     'resizeDuration': 200,
+     'wrapAround': true
+   })
+ </script>
 </body>
 </html>
