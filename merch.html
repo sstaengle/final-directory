@@ -10,15 +10,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- title of page in browser -->
   <title>Welcome to CRO</title>
-<!-- JAVA script -->
-<script type="text/javascript" src=".assets/javascripts/merch.js"></script>
+  <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
 <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
-<!-- GOOGLE FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+
 </head>
 <!--BODY -->
 <body>
@@ -77,48 +76,130 @@
 
 -->
 
-<!-- 2-MERCH container -->
-<div class="container merch-container">
+<!-- CONTROL Buttons -->
+<!--<div class="container merch-container">
   <div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('ALL')"> ALL</button>
-  <button class="btn" onclick="filterSelection('TOPS')"> TOPS</button>
-  <button class="btn" onclick="filterSelection('HATS')"> HATS</button>
-  <button class="btn" onclick="filterSelection('BUNDLES')"> BUNDLES</button>
-  <button class="btn" onclick="filterSelection('ACCESSORIES')"> ACCESSORIES</button>
+  <button class="btn active" onclick="filterSelection('all')"> ALL</button>
+  <button class="btn" onclick="filterSelection('tops')"> TOPS</button>
+  <button class="btn" onclick="filterSelection('hats')"> HATS</button>
+  <button class="btn" onclick="filterSelection('bundles')"> BUNDLES</button>
+  <button class="btn" onclick="filterSelection('accessories')"> ACCESSORIES</button>
 </div>
-<br />
+<br />-->
 <!-- Portfolio Gallery Grid -->
-<div class="row">
-      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/1-mer.jpg" alt="TOPS" style="width:100%"></div>
-      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/2-mer.jpg" alt="TOPS" style="width:100%"></div>
-      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/3-mer.jpg" alt="TOPS" style="width:100%"></div>
+<!--<div class="row">
+      <div class="col-xs-6 col-md-4 filterDiv tops"><img src="./assets/images/merch-items/1-mer.jpg" alt="TOPS" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4 filterDiv tops"><img src="./assets/images/merch-items/2-mer.jpg" alt="TOPS" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4 filterDiv tops"><img src="./assets/images/merch-items/3-mer.jpg" alt="TOPS" style="width:100%"></div>
 </div>
 <br />
 <div class="row">
-      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/4-mer.jpg" alt="TOPS" style="width:100%"></div>
-      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/5-mer.jpg" alt="HATS" style="width:100%"></div>
-      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/6-mer.jpg" alt="HATS" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4 filterDiv tops"><img src="./assets/images/merch-items/4-mer.jpg" alt="TOPS" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4 filterDiv hats"><img src="./assets/images/merch-items/5-mer.jpg" alt="HATS" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4 filterDiv hats"><img src="./assets/images/merch-items/6-mer.jpg" alt="HATS" style="width:100%"></div>
 </div>
 <br />
 <div class="row">
-      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/7-mer.jpg" alt="HATS" style="width:100%"></div>
-      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/8-mer.jpg" alt="BUNDLES" style="width:100%"></div>
-      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/9-mer.jpg" alt="BUNDLES" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/merch-items/7-mer.jpg" alt="HATS" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/merch-items/8-mer.jpg" alt="BUNDLES" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/merch-items/9-mer.jpg" alt="BUNDLES" style="width:100%"></div>
 </div>
 <br />
 <div class="row">
-      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/10-mer.jpg" alt="BUNDLES" style="width:100%"></div>
-      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/11-mer.jpg" alt="ACCESSORIES" style="width:100%"></div>
-      <div class="col-xs-6 col-md-4"><img src="./assets/images/MERCH-items/12-mer.jpg" alt="ACCESSORIES" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/merch-items/10-mer.jpg" alt="BUNDLES" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/merch-items/11-mer.jpg" alt="ACCESSORIES" style="width:100%"></div>
+      <div class="col-xs-6 col-md-4"><img src="./assets/images/merch-items/12-mer.jpg" alt="ACCESSORIES" style="width:100%"></div>
 </div>
 </div>
 <br />
-<br />
+<br /> -->
 <!-- END GRID -->
+
+<style>
+.container {
+    overflow: hidden;
+}
+
+.filterDiv {
+    display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements
+
+width: 100px;
+line-height: 100px;
+
+*/
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.button-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+</style>
+<div class="container merch-container"></div>
+<div id="myBtnContainer">
+  <div class="container button-header">
+    <button class="btn active" onclick="filterSelection('all')"> all</button>
+    <button class="btn" onclick="filterSelection('tops')"> tops</button>
+    <button class="btn" onclick="filterSelection('hats')"> hats</button>
+    <button class="btn" onclick="filterSelection('bundles')"> bundles</button>
+    <button class="btn" onclick="filterSelection('accessories')"> accessories</button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4 filterDiv tops"><img class="img-responsive" src="./assets/images/merch-items/1-mer.jpg" style="width:100%"></div>
+    <div class="col-xs-12 col-sm-6 col-md-4 filterDiv tops"><img class="img-responsive" src="./assets/images/merch-items/2-mer.jpg" style="width:100%"></div>
+    <div class="col-xs-12 col-sm-6 col-md-4 filterDiv tops"><img class="img-responsive" src="./assets/images/merch-items/3-mer.jpg" style="width:100%"></div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-4 filterDiv tops"><img src="./assets/images/merch-items/4-mer.jpg" style="width:100%"></div>
+    <div class="col-xs-6 col-md-4 filterDiv hats"><img src="./assets/images/merch-items/5-mer.jpg" style="width:100%"></div>
+    <div class="col-xs-6 col-md-4 filterDiv hats"><img src="./assets/images/merch-items/6-mer.jpg" style="width:100%"></div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-4 filterDiv hats"><img src="./assets/images/merch-items/7-mer.jpg" style="width:100%"></div>
+    <div class="col-xs-6 col-md-4 filterDiv bundles"><img src="./assets/images/merch-items/8-mer.jpg" style="width:100%"></div>
+    <div class="col-xs-6 col-md-4 filterDiv bundles"><img src="./assets/images/merch-items/9-mer.jpg" style="width:100%"></div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-md-4 filterDiv bundles"><img src="./assets/images/merch-items/10-mer.jpg" style="width:100%"></div>
+    <div class="col-xs-6 col-md-4 filterDiv accessories"><img src="./assets/images/merch-items/11-mer.jpg" style="width:100%"></div>
+    <div class="col-xs-6 col-md-4 filterDiv accessories"><img src="./assets/images/merch-items/12-mer.jpg" style="width:100%"></div>
+  </div>
+</div>
+
+
+
 
 
     <!-- FOOTER -->
-    <div class="footer">
+    <!--<div class="footer">
           <h1>FOLLOW CRO</h1>
             <a href="https://www.facebook.com/cromusic/" target="_blank"<i class="fa fa-facebook"></i></a>
             <a href="https://www.instagram.com/thisiscro/" target="_blank"<i class="fa fa-instagram"></i></a>
@@ -130,7 +211,57 @@
             <div class="legal">PRIVACY POLICY</div>
             <div class="legal">TERMS OF USE</div>
           </div>
-    </div>
+    </div>-->
+<!-- <script src="./assets/javascripts/merch.js"></script> -->
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 
 </body>
 </html>
