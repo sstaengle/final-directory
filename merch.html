@@ -16,8 +16,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
-
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/merch.css" />
 </head>
 <!--BODY -->
 <body>
@@ -113,81 +112,35 @@
 </div>
 <br />
 <br /> -->
-<!-- END GRID -->
 
-<style>
-.container {
-    overflow: hidden;
-}
-
-.filterDiv {
-    display: none; /* Hidden by default */
-}
-
-/* The "show" class is added to the filtered elements
-
-width: 100px;
-line-height: 100px;
-
-*/
-.show {
-    display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
-
-/* Add a light grey background on mouse-over */
-.btn:hover {
-  background-color: #ddd;
-}
-
-/* Add a dark background to the active button */
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-
-.button-header {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-</style>
 <div class="container merch-container"></div>
 <div id="myBtnContainer">
   <div class="container button-header">
-    <button class="btn active" onclick="filterSelection('all')"> all</button>
-    <button class="btn" onclick="filterSelection('tops')"> tops</button>
-    <button class="btn" onclick="filterSelection('hats')"> hats</button>
-    <button class="btn" onclick="filterSelection('bundles')"> bundles</button>
-    <button class="btn" onclick="filterSelection('accessories')"> accessories</button>
+    <button class="btn active" onclick="filterSelection('all')"> ALL</button>
+    <button class="btn" onclick="filterSelection('tops')"> TOPS</button>
+    <button class="btn" onclick="filterSelection('hats')"> HATS</button>
+    <button class="btn" onclick="filterSelection('bundles')"> BUNDLES</button>
+    <button class="btn" onclick="filterSelection('accessories')"> ACCESSORIES</button>
   </div>
 </div>
 
 <div class="container">
-  <div class="row">
+  <div class="row merch-row">
     <div class="col-xs-12 col-sm-6 col-md-4 filterDiv tops"><img class="img-responsive" src="./assets/images/merch-items/1-mer.jpg" style="width:100%"></div>
     <div class="col-xs-12 col-sm-6 col-md-4 filterDiv tops"><img class="img-responsive" src="./assets/images/merch-items/2-mer.jpg" style="width:100%"></div>
     <div class="col-xs-12 col-sm-6 col-md-4 filterDiv tops"><img class="img-responsive" src="./assets/images/merch-items/3-mer.jpg" style="width:100%"></div>
   </div>
-  <div class="row">
+  <div class="row merch-row">
     <div class="col-xs-6 col-md-4 filterDiv tops"><img src="./assets/images/merch-items/4-mer.jpg" style="width:100%"></div>
     <div class="col-xs-6 col-md-4 filterDiv hats"><img src="./assets/images/merch-items/5-mer.jpg" style="width:100%"></div>
     <div class="col-xs-6 col-md-4 filterDiv hats"><img src="./assets/images/merch-items/6-mer.jpg" style="width:100%"></div>
   </div>
-  <div class="row">
+  <div class="row merch-row">
     <div class="col-xs-6 col-md-4 filterDiv hats"><img src="./assets/images/merch-items/7-mer.jpg" style="width:100%"></div>
     <div class="col-xs-6 col-md-4 filterDiv bundles"><img src="./assets/images/merch-items/8-mer.jpg" style="width:100%"></div>
     <div class="col-xs-6 col-md-4 filterDiv bundles"><img src="./assets/images/merch-items/9-mer.jpg" style="width:100%"></div>
   </div>
-  <div class="row">
+  <div class="row merch-row">
     <div class="col-xs-6 col-md-4 filterDiv bundles"><img src="./assets/images/merch-items/10-mer.jpg" style="width:100%"></div>
     <div class="col-xs-6 col-md-4 filterDiv accessories"><img src="./assets/images/merch-items/11-mer.jpg" style="width:100%"></div>
     <div class="col-xs-6 col-md-4 filterDiv accessories"><img src="./assets/images/merch-items/12-mer.jpg" style="width:100%"></div>
@@ -195,11 +148,8 @@ line-height: 100px;
 </div>
 
 
-
-
-
     <!-- FOOTER -->
-    <!--<div class="footer">
+  <div class="footer">
           <h1>FOLLOW CRO</h1>
             <a href="https://www.facebook.com/cromusic/" target="_blank"<i class="fa fa-facebook"></i></a>
             <a href="https://www.instagram.com/thisiscro/" target="_blank"<i class="fa fa-instagram"></i></a>
@@ -211,7 +161,7 @@ line-height: 100px;
             <div class="legal">PRIVACY POLICY</div>
             <div class="legal">TERMS OF USE</div>
           </div>
-    </div>-->
+    </div>
 <!-- <script src="./assets/javascripts/merch.js"></script> -->
 <script>
 filterSelection("all")
@@ -251,7 +201,9 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
+
 // Add active class to the current control button (highlight it)
+
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {

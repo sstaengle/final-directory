@@ -1,0 +1,144 @@
+
+.container {
+    overflow: hidden;
+}
+
+.filterDiv {
+    display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements
+
+width: 100px;
+line-height: 100px;
+
+*/
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: grey;
+  outline: none;
+  padding: 20px 78px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  margin: 3px;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #5BBABC;
+  color: white;
+}
+
+.button-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* non MERCH specific CSS (for header, footer, etc) */
+/* HEADER */
+ body {
+   background: white;
+   font-family: 'Overpass', sans-serif;
+   width: 100%;
+ }
+
+  .header-container {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+  }
+
+  .icon-container{
+    display: inline-block;
+  }
+
+  .nav-container{
+    display: inline-block;
+  }
+
+  .nav-item{
+    display:inline-block;
+    padding-left: 80px;
+  }
+
+  .nav-item a {
+    color: white;
+  }
+ .nav-item.active a {
+   color: #E87DF8;
+ }
+
+  #logo {
+    padding-top: 0px;
+    height:70px;
+    width: auto;
+  }
+
+  /* FOOTER */
+
+.footer{
+display: block;
+background-color: #5BBABC;
+text-align: center;
+padding: 80px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 40px;
+}
+
+.fa{
+  color:black;
+  font-size: 50px;
+  padding: 20px;
+}
+
+.fa:hover{
+  color: #E87DF8;
+  text-decoration: none;
+}
+
+.legal{
+  font-size:12px;
+  padding: 15px;
+  color:black;
+  display: inline-block;
+}
+
+h1 {
+  64px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+h2{
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.merch-row {
+  margin-bottom: 30px;
+}
+
+.header-border{
+  border-bottom: lightgray solid 2px;
+}
