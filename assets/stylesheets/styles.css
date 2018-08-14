@@ -36,6 +36,15 @@ body {
   color: #E87DF8;
 }
 
+/* TOUR links */
+.table-link a {
+  color: #5BBABC;
+}
+
+.table-link a:hover {
+  color: #E87DF8;
+}
+
  #logo {
    padding-top: 0px;
    height:70px;
@@ -130,8 +139,16 @@ h2{
 .album-thumbnail{
   height: 250px;
   width:auto;
+
 }
 
+.album-thumbnail:hover {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  transition: box-shadow 0.1s ease-in-out;
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05);
+}
 .album-container{
   border-top: 2px solid lightgrey;
   padding-top: 40px;
@@ -200,10 +217,6 @@ h2{
   padding-top: 50px;
   padding-bottom: 50px;
   border-top: 2px solid lightgrey;
-
-.table-link a {
-  color: #5BBABC;
-}
 
 /* MEDIA */
 .media-row{
