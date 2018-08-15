@@ -5,6 +5,7 @@
 
 .filterDiv {
     display: none; /* Hidden by default */
+    margin-bottom: 30px;
 }
 
 /* The "show" class is added to the filtered elements
@@ -33,7 +34,7 @@ line-height: 100px;
 }
 
 /* Add a dark background to the active button */
-.btn.active {
+.btn.btn-active {
   background-color: #5BBABC;
   color: white;
 }
@@ -135,9 +136,7 @@ h2{
   margin-right: auto;
 }
 
-.merch-row {
-  margin-bottom: 30px;
-}
+
 
 .header-border{
   border-bottom: lightgray solid 2px;
